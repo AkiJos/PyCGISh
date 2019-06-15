@@ -34,7 +34,7 @@ if "cmd_name" in form:
 
 
 	try:
-		# shlex module for shell like syantaxes
+		# shlex module for shell like syntaxes
 		cmd = shlex.split(name)
 		cmd_handle = subprocess.Popen(cmd, stdin = subprocess.PIPE, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
 		print(cmd_handle.stdout.read().decode())
